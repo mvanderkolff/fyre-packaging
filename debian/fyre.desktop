@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Encoding=UTF-8
+Name=Fyre
+Comment=Render Peter de Jong maps
+Comment[de]=Peter de Jong-Grafiken berechnen
+TryExec=/usr/bin/fyre
+Exec=/usr/bin/fyre
+Categories=Application;Graphics;2DGraphics;
+Icon=/usr/share/pixmaps/fyre-48x48.png
+

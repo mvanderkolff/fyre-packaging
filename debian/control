@@ -1,0 +1,15 @@
+Source: fyre
+Section: graphics
+Priority: optional
+Maintainer: Christoph Haas <haas@debian.org>
+Build-Depends: libglade2-dev (>= 1:2.4), debhelper (>= 4.2.20), libgtk2.0-dev (>= 2.0.0)
+Standards-Version: 3.6.1
+
+Package: fyre
+Architecture: any
+Depends: libglade2-0 (>= 1:2.0), libgtk2.0-0 (>= 2.0.0)
+Description: interactively renders Peter de Jong maps (chaotic functions)
+ Fyre provides a rendering of the Peter de Jong map, with an interactive
+ GTK+ frontend and a command line interface for easy and efficient rendering
+ of high-resolution, high quality images.
+

@@ -1,0 +1,24 @@
+fyre (1.0.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christoph Haas <haas@debian.org>  Wed, 23 Feb 2005 17:14:18 +0100
+
+fyre (0.9-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christoph Haas <haas@debian.org>  Tue,  8 Feb 2005 16:47:53 +0100
+
+fyre (0.7-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christoph Haas <haas@debian.org>  Mon, 17 Jan 2005 23:52:31 +0100
+
+fyre (0.6-1) unstable; urgency=low
+
+  * Initial Release (closes: #269997).
+
+ -- Christoph Haas <email@christoph-haas.de>  Sat,  4 Sep 2004 17:06:29 +0200
+

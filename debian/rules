@@ -1,0 +1,57 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+build: build-stamp
+
+build-stamp:
+	dh_testdir
+	./configure --prefix=/usr --datadir=/usr/share
+	$(MAKE)
+
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	dh_clean 
+
+	# Clean up manually
+	# (withouth running ./configure we have no Makefile)
+	rm -rf src/.deps
+	find . -type f -name '*.o' -exec rm {} \;
+	find . -type f -name Makefile -exec rm {} \;
+	rm -f config.log config.status stamp-h config.h stamp-h1 src/fyre
+	rm -f autopackage/default.apspec
+	rm -f debian/fyre.mime
+
+# Build architecture-dependent files here.
+binary: build install
+	dh_testdir
+	dh_testroot
+	dh_installdirs
+	dh_install
+	dh_strip
+	dh_installdocs -X COPYING
+	dh_installman
+	# dh_install installs debian/fyre.mime (I wish it would accept a path)
+	install data/fyre.xml debian/fyre.mime
+	dh_installmime
+	dh_installchangelogs ChangeLog
+	dh_desktop
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+binary-arch: build install
+# We have nothing to do by default.
+
+binary: build install
+.PHONY: build clean binary install configure
+
