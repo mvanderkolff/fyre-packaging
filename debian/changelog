@@ -1,3 +1,10 @@
+fyre (1.0.0-2) unstable; urgency=low
+
+  * Fixed the debian/rules script to build the binary target correctly.
+    (Closes: #306247)
+
+ -- Christoph Haas <haas@debian.org>  Mon, 25 Apr 2005 16:26:35 +0100
+
 fyre (1.0.0-1) unstable; urgency=low
 
   * New upstream release.

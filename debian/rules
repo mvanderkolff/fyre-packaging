@@ -28,7 +28,7 @@ clean:
 	rm -f debian/fyre.mime
 
 # Build architecture-dependent files here.
-binary: build install
+binary-arch: build install
 	dh_testdir
 	dh_testroot
 	dh_installdirs
@@ -48,10 +48,11 @@ binary: build install
 	dh_md5sums
 	dh_builddeb
 
-# Build architecture-dependent files here.
-binary-arch: build install
-# We have nothing to do by default.
+# No architecture-independent packages to build
+binary-indep:
 
-binary: build install
+# Create the packages
+binary: binary-arch
+
 .PHONY: build clean binary install configure
 
