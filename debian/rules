@@ -25,7 +25,7 @@ clean:
 	find . -type f -name Makefile -exec rm {} \;
 	rm -f config.log config.status stamp-h config.h stamp-h1 src/fyre
 	rm -f autopackage/default.apspec
-	rm -f debian/fyre.mime
+	rm -f debian/fyre.sharedmimeinfo
 
 # Build architecture-dependent files here.
 binary-arch: build install
@@ -36,9 +36,10 @@ binary-arch: build install
 	dh_strip
 	dh_installdocs -X COPYING
 	dh_installman
-	# dh_install installs debian/fyre.mime (I wish it would accept a path)
-	install data/fyre.xml debian/fyre.mime
+	#
+	install data/fyre.xml debian/fyre.sharedmimeinfo
 	dh_installmime
+	#
 	dh_installchangelogs ChangeLog
 	dh_desktop
 	dh_compress
