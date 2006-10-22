@@ -8,5 +8,5 @@ Comment[de]=Peter de Jong-Grafiken berechnen
 TryExec=/usr/bin/fyre
 Exec=/usr/bin/fyre
 Categories=Application;Graphics;2DGraphics;
-Icon=/usr/share/pixmaps/fyre-48x48.png
+Icon=/usr/share/pixmaps/fyre.png
 

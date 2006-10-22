@@ -1,4 +1,4 @@
 src/fyre usr/bin
 data/*.glade usr/share/fyre
-data/fyre-48x48.png usr/share/pixmaps
+data/icons/24x24/fyre.png usr/share/pixmaps
 debian/fyre.desktop usr/share/applications

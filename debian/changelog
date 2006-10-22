@@ -1,3 +1,10 @@
+fyre (1.0.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Patch from Sebastian Dröge included to avoid libcairo dependency.
+
+ -- Christoph Haas <haas@debian.org>  Sun, 22 Oct 2006 20:33:21 +0200
+
 fyre (1.0.0-3) unstable; urgency=low
 
   * Moved the mime file to /usr/share/mime/packages. (Closes: #310447)
