@@ -2,3 +2,7 @@ src/fyre usr/bin
 data/*.glade usr/share/fyre
 data/icons/24x24/fyre.png usr/share/pixmaps
 debian/fyre.desktop usr/share/applications
+data/icons/16x16/fyre.png usr/share/icons/hicolor/16x16/apps
+data/icons/22x22/fyre.png usr/share/icons/hicolor/22x22/apps
+data/icons/24x24/fyre.png usr/share/icons/hicolor/24x24/apps
+data/icons/scalable/fyre.svg usr/share/icons/hicolor/scalable/apps

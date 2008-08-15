@@ -3,7 +3,8 @@ Section: graphics
 Priority: optional
 Maintainer: Christoph Haas <haas@debian.org>
 Build-Depends: libglade2-dev (>= 1:2.4), debhelper (>= 4.2.20), libgtk2.0-dev (>= 2.0.0)
-Standards-Version: 3.7.2
+Standards-Version: 3.7.3
+Homepage: http://fyre.navi.cx/
 
 Package: fyre
 Architecture: any
